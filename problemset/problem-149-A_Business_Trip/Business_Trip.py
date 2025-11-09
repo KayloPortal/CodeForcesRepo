@@ -1,8 +1,5 @@
 k = int(input())
-nums = []
-for i in range(12):
-  num = int(input)
-  nums.append(num)
+nums = list(map(int, input().split()))
 nums.sort()
 count = 0
 my_sum = 0
