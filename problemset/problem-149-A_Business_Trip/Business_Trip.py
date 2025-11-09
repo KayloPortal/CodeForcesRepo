@@ -11,4 +11,4 @@ for num in nums:
   count += 1
   if my_sum >= k:
     break
-  
+print(count)
