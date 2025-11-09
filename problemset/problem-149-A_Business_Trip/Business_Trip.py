@@ -6,9 +6,14 @@ else:
   nums.sort(reverse=True)
   count = 0
   my_sum = 0
+  canBeGrown = False
   for num in nums:
     my_sum += num
     count += 1
     if my_sum >= k:
+      canBeGrown = True
       break
-  print(count)
+  if canBeGrown:
+    print(count)
+  else:
+    print(-1)
