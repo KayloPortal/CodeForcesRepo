@@ -1,6 +1,6 @@
 k = int(input())
 nums = list(map(int, input().split()))
-nums.sort()
+nums.sort(reverse=True)
 count = 0
 my_sum = 0
 for num in nums:
