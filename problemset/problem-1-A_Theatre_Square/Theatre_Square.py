@@ -1,6 +1,12 @@
 [n, m, a] = map(int, input().split())
 area = n * m
-if area % a == 0:
-  print(area / a)
+tile = a**2
+if n % a == 0:
+  n /= a
 else:
-  print((area // a) + 1)
+  n = n//a + 1
+if m % a == 0:
+  m /= a
+else:
+  m = m//a + 1
+print(n * m)
