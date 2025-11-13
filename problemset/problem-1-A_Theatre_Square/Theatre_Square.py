@@ -9,4 +9,4 @@ if m % a == 0:
   m /= a
 else:
   m = m//a + 1
-print(n * m)
+print(int(n * m))
