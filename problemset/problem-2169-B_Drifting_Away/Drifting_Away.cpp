@@ -18,7 +18,7 @@ int main()
     int r = 0;
     int l = 0;
     int star = 0;
-    for (int i = 0; i < s.size(); i++)
+    for (int i = 0; i < s.size() - 1; i++)
     {
       switch (s[i])
       {
