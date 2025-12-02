@@ -11,7 +11,7 @@ int main()
     string s;
     cin >> s;
     if (s.size() == 1){
-      cout << "o " << 1 << "\n";
+      cout << 1 << "\n";
       continue;
     }
     bool found = false;
@@ -34,7 +34,7 @@ int main()
       }
       if ((s[i] == '*' && s[i + 1] == '*') || (s[i] == '>' && s[i + 1] == '<') || (s[i] == '*' && s[i + 1] == '<') || (s[i] == '>' && s[i + 1] == '*'))
       {
-        cout << "o " << -1 << "\n";
+        cout << -1 << "\n";
         found = true;
         break;
       }
@@ -54,7 +54,7 @@ int main()
     
     if (found)
       continue;
-    cout << "o " << star + max(l, r) << "\n";
+    cout << star + max(l, r) << "\n";
   }
   return 0;
 }
